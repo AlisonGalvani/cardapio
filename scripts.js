@@ -90,7 +90,25 @@ function renderCardapio() {
     });
 }
 
-// Inicializa o script
+function highlightActiveMenu() {
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    sections.forEach((section, index) => {
+        const sectionTop = section.offsetTop - 100; // Ajuste para considerar a altura da navbar
+        const sectionBottom = sectionTop + section.offsetHeight;
+
+        if (window.scrollY >= sectionTop && window.scrollY < sectionBottom) {
+            navLinks.forEach(link => link.classList.remove('active'));
+            navLinks[index].classList.add('active');
+        }
+    });
+}
+
+
 $(document).ready(function () {
     renderCardapio();
+
+    highlightActiveMenu();
+    window.addEventListener('scroll', highlightActiveMenu);
 });
