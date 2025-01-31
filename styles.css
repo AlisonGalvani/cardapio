@@ -47,16 +47,18 @@ body {
     background-size: cover;
     background-position: center;
     z-index: -1;
+    filter: blur(3px)
 }
 
 /* Conteúdo Principal */
 .container {
-    margin-top: 100px;
+    /* border: 1px  solid yellow; */
     padding: 20px;
 }
 
 /* Home */
 .home-section {
+    /* border:  1px solid blue; */
     height: 100vh;
     display: flex;
     align-items: center;
@@ -65,8 +67,11 @@ body {
 }
 
 .home-content {
+    /* border:  1px solid red; */
     max-width: 800px;
     margin: 0 auto;
+    margin-bottom: 40px;
+    text-shadow: 1px 1px 1px #000000;
 }
 
 .home-title {
@@ -93,6 +98,7 @@ body {
     font-size: 1.2rem;
     font-weight: bold;
     transition: background-color 0.3s ease;
+    text-shadow: none;
 }
 
 .btn-home:hover {
@@ -126,7 +132,10 @@ body {
 
 /* Cardápio */
 .cardapio-section .row {
+    /* border:  1px solid red; */
     gap: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 .card-item {
