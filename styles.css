@@ -1,0 +1,172 @@
+/* Estilos Globais */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar-translucent {
+    background-color: rgba(255, 255, 255, 0.7) !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333 !important;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    margin-right: 10px;
+}
+
+.nav-link {
+    color: #333 !important;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: #555 !important;
+}
+
+/* Background */
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+/* Conteúdo Principal */
+.container {
+    margin-top: 100px;
+    padding: 20px;
+}
+
+/* Home */
+.home-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.home-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.home-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #fff;
+    line-height: 1.2;
+}
+
+.home-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.btn-home {
+    background-color: #e67e22;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-home:hover {
+    background-color: #d35400;
+}
+
+/* Títulos das Seções */
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: #e67e22;
+    margin: 10px auto 0;
+}
+
+/* Espaçamento entre seções */
+.section-spacer {
+    height: 80px;
+}
+
+/* Cardápio */
+.cardapio-section .row {
+    gap: 20px;
+}
+
+.card-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 15px;
+    color: #333;
+    transition: transform 0.3s ease;
+}
+
+.card-item:hover {
+    transform: translateY(-10px);
+}
+
+.card-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-item h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.card-item p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+.card-item .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #e67e22;
+}
+
+/* Sobre Nós */
+.sobre-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #fff;
+}
